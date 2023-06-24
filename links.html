@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a {
+            color: red;
+            text-decoration: none;
+        }
+        a:visited {
+            color: rgb(9, 94, 105);
+            
+        }
+        a:hover {
+            text-decoration: underline;
+            padding: 5px;
+        }
+        a:active {
+            color: chartreuse;
+        }
+        a::after{
+            content: ' [Link]';
+            text-decoration: none;
+            color: lightcoral;
+        }
+        .especial::after, .especial::before {
+            content: '☆';
+            color: rgb(255, 38, 0);
+        }
+    </style>
+</head>
+<body>
+    <h1>personalizando links</h1>
+    <ul>
+        <li><a href="https://github.com/forestbr">repositorio github</a></li>
+        <li><a href="https://www.youtube.com/channel/UCPbW0k1dys8sp2x92I2RAnw" class="especial">canal do youtube</a></li>
+        <li><a href="https://twitter.com/wayffer2">meu twitter</a></li>
+    </ul>
+</body>
+</html>
