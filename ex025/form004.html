@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        fieldset {
+            position: absolute;
+            display: block;
+            background-color: aquamarine;
+            box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.315);
+            border: 0px;
+            border-radius: 10px;
+            text-align: center;
+            width: 400px;
+            margin: auto;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        legend {
+            margin: auto;
+            
+        }
+        legend::after, legend::before {
+            display: block;
+            content: '';
+            height: 1px;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <form action="cad.js">
+<fieldset>
+    <legend>dados de cadastro</legend>
+            <p>
+                <label for="iemail">email</label>
+                <input type="email" name="" id="iemail">
+               </p>
+            <p>
+                <label for="itel">numerode cel</label>
+                <input type="tel" name="" id="itel" pattern="^\(/d{2}\)/[0-9]{4}-[0-9]{4}$" required placeholder="(xx)xxxx-xxxx">
+    
+                 </p>
+</fieldset>
+    </form>
+</body>
+</html>
